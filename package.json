@@ -11,9 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-handlebars": "3.0",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
+    "@types/express-handlebars": "^6.0.0",
     "nodemon": "^2.0.20"
   }
 }
