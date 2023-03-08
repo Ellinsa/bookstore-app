@@ -6,6 +6,6 @@ const prefix = '/add-product';
 
 router.get(prefix, AdminController.getAddProduct);
 router.post(prefix, AdminController.postGetProduct);
-router.get("/products");
+router.get("/products", AdminController.getAdminProducts);
 
 module.exports = router;

@@ -16,3 +16,13 @@ exports.postGetProduct = (req, res) => {
     newProduct.save();
     res.redirect('/');
   };
+
+exports.getAdminProducts = (req, res, next) =>{
+  res.render(`${prefix}/products`, {
+    docTitle: 'Admin products',
+    path: `/${prefix}/products`,
+    activeAddProduct: true,
+    formsCSS: true,
+    productCSS: true,
+  });
+}
