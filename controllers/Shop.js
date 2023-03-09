@@ -25,6 +25,15 @@ exports.getIndex = (req, res, next)=>{
     });
   });
 }
+exports.getOrders = (req, res, next)=>{
+    res.render('shop/orders', {
+      docTitle: 'Shop',
+      path: '/orders',
+      activeShop: true,
+      productCSS: true,
+    });
+ 
+}
 exports.getCart = (req, res, next)=>{
     res.render('shop/cart', {
       docTitle: 'Cart',

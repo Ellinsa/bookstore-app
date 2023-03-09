@@ -14,8 +14,11 @@ const getProductsFromStorage = (cb) => {
 };
 
 module.exports = class Product {
-  constructor(title) {
+  constructor(title, image, price, description) {
     this.title = title;
+    this.imageUrl = image;
+    this.price = price;
+    this.description = description;
   }
 
   save() {
